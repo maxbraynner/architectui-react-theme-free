@@ -20,7 +20,7 @@ const initialState = {
 
 const Graph = React.createClass({
 	displayName: 'Graph',
-	componentWillMount(){
+	UNSAFE_componentWillMount(){
 		this.setState(initialState);
 	},
 	componentDidMount(){

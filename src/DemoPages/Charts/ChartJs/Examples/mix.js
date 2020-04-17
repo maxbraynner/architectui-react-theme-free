@@ -32,7 +32,7 @@ var createReactClass = require('create-react-class');
 
 const Graph = createReactClass({
     displayName: 'Graph',
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         this.setState(initialState);
     },
     componentDidMount(){

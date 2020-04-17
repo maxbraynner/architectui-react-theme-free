@@ -1,4 +1,4 @@
-import sideBar6 from '../assets/utils/images/sidebar/city1.jpg';
+import sideBar6 from '../assets/utils/images/sidebar/abstract7.jpg';
 
 export const SET_ENABLE_BACKGROUND_IMAGE = 'THEME_OPTIONS/SET_ENABLE_BACKGROUND_IMAGE';
 
@@ -109,9 +109,9 @@ export const setBackgroundImage = backgroundImage => ({
     backgroundImage
 });
 
-export default function reducer(state = {
+const INITIAL_STATE = {
     backgroundColor: 'bg-royal sidebar-text-light',
-    headerBackgroundColor: 'bg-strong-bliss header-text-light',
+    headerBackgroundColor: 'bg-grow-early header-text-light',
     enableMobileMenuSmall: '',
     enableBackgroundImage: true,
     enableClosedSidebar: false,
@@ -126,7 +126,9 @@ export default function reducer(state = {
     enablePageTitleIcon: true,
     enablePageTitleSubheading: true,
     enablePageTabsAlt: false,
-}, action) {
+}
+
+export default function reducer(state = INITIAL_STATE, action) {
     switch (action.type) {
         case SET_ENABLE_BACKGROUND_IMAGE:
             return {

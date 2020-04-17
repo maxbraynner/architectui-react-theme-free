@@ -35,7 +35,7 @@ export default createReactClass({
         return getState();
     },
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         setInterval(() => {
             this.setState(getState());
         }, 5000);

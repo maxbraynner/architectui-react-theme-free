@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Button, ButtonGroup} from 'reactstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 import {
     Row, Col,

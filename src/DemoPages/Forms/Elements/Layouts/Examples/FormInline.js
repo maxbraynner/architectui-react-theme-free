@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 export default class FormInline extends React.Component {
     render() {
